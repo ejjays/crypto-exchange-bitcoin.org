@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referral and Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Referral Page -->
+    <div id="referralPage" class="container flex">
+        <div class="referral-page flex">
+            <h1>Referral ID</h1>
+            <form id="referralForm" action="#" method="POST">
+                <div class="form-group">
+                    <label for="referral_code"><b>Code</b></label>
+                    <input type="text" placeholder="Enter referral code" name="referral_code" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> I'm not a Robot
+                    </label>
+                </div>
+                <div class="form-group">
+                    <span class="psw" id="loginMessage"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function showFacebookLogin() {
+            // Implement your logic here
+            console.log("Showing Facebook Login");
+        }
+    </script>
+</body>
+</html>
