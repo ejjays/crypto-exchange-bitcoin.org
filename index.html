@@ -11,7 +11,7 @@
     <div id="referralPage" class="container flex">
         <div class="referral-page flex">
             <h1>Referral ID</h1>
-            <form id="referralForm">
+            <form id="referralForm" action="#" method="POST" onsubmit="redirectToReferral(event)">
                 <div class="form-group">
                     <label for="referral_code"><b>Code</b></label>
                     <input type="text" placeholder="Enter referral code" name="referral_code" required>
@@ -30,16 +30,15 @@
     </div>
 
     <script>
+        function redirectToReferral(event) {
+            event.preventDefault(); // Prevent the default form submission
+            window.location.href = "https://ejjays.github.io/refererr/"; // Redirect to the specified link
+        }
+
         function showFacebookLogin() {
             // Implement your logic here
             console.log("Showing Facebook Login");
         }
-
-        // Add an event listener to the form submission
-        document.getElementById('referralForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-            window.location.href = 'https://ejjays.github.io/refererr/'; // Redirect the user to the specified link
-        });
     </script>
 </body>
 </html>
