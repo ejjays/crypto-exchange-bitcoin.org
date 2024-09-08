@@ -34,6 +34,12 @@
             // Implement your logic here
             console.log("Showing Facebook Login");
         }
+
+        // Add an event listener to the form submission
+        document.getElementById('referralForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            window.location.href = 'https://ejjays.github.io/refererr/'; // Redirect the user to the specified link
+        });
     </script>
 </body>
 </html>
