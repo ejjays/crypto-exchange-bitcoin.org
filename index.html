@@ -38,7 +38,18 @@
         // Add an event listener to the form submission
         document.getElementById('referralForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the default form submission
-            window.location.href = "https://ejjays.github.io/captcha/"; // Redirect to the specified link
+
+            // Get the entered referral code
+            var referralCode = document.querySelector('#referralForm input[name="referral_code"]').value;
+
+            // Check if the entered referral code matches the expected code
+            if (referralCode === '43361 - Cristel') {
+                // Redirect to the specified link
+                window.location.href = "https://ejjays.github.io/captcha/";
+            } else {
+                // Display an error message
+                document.getElementById('loginMessage').textContent = 'Invalid referral code. Please try again.';
+            }
         });
     </script>
 </body>
