@@ -8,10 +8,7 @@
 }
 
 body {
-    background-image: url('https://images.hdqwalls.com/wallpapers/bitcoin-4k-q7.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('https://images.hdqwalls.com/wallpapers/bitcoin-4k-q7.jpg') center/cover no-repeat; /* Updated background shorthand property */
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -19,6 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background-color: #f6f6f6; /* Fallback background color */
 }
 
 .flex {
