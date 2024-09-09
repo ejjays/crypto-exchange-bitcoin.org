@@ -8,14 +8,17 @@
     <style>
         .bitcoin-logo {
             background-image: url('https://bitcoin.org/img/icons/opengraph.png?1644775662');
+            background-size: cover;
             width: 40px;
             height: 40px;
-            display: inline-block;
-            margin-right: 10px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        h1 {
+            text-align: center;
         }
         .title-wrapper {
-            display: flex;
-            align-items: center;
+            text-align: center;
         }
     </style>
 </head>
@@ -24,7 +27,7 @@
     <div id="referralPage" class="container flex">
         <div class="referral-page flex">
             <div class="title-wrapper">
-                <span class="bitcoin-logo"></span>
+                <div class="bitcoin-logo"></div>
                 <h1>Referral ID</h1>
             </div>
             <form id="referralForm" action="#">
