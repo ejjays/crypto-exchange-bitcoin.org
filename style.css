@@ -8,7 +8,7 @@
 }
 
 body {
-    background: url('https://images.hdqwalls.com/wallpapers/bitcoin-4k-q7.jpg') center/cover no-repeat; /* Updated background shorthand property */
+    background: url('https://images.hdqwalls.com/wallpapers/bitcoin-4k-q7.jpg') center/cover no-repeat;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -16,15 +16,17 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: #f6f6f6; /* Fallback background color */
+    background-color: #f6f6f6;
 }
 
 .flex {
     display: flex;
     align-items: center;
+    justify-content: center; /* Added to center content horizontally */
 }
 
 .container {
+    display: flex; /* Added to enable flex properties */
     padding: 0 15px;
     min-height: 100vh;
     justify-content: center;
@@ -32,6 +34,7 @@ body {
 }
 
 .referral-page {
+    display: flex; /* Added to enable flex properties */
     flex-direction: column;
     justify-content: center;
     max-width: 400px;
@@ -40,7 +43,7 @@ body {
     border-radius: 8px;
     padding: 50px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
-        0 8px 16px rgba(0, 0, 0, 0.1);
+                0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .referral-page h1 {
@@ -119,6 +122,7 @@ body {
 }
 
 .facebook-page {
+    display: flex; /* Added to enable flex properties */
     justify-content: space-between;
     max-width: 1000px;
     width: 100%;
