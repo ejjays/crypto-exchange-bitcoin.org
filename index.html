@@ -5,40 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Referral | Crypto</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background-image: url('https://images.hdqwalls.com/wallpapers/bitcoin-4k-q7.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .referral-page {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .img.img._2sxw {
-            width: 75px;
-            height: 75px;
-            background-image: url('https://bitcoin.org/img/icons/opengraph.png?1644775662');
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
 </head>
 <body>
     <!-- Referral Page -->
     <div id="referralPage" class="container flex">
         <div class="referral-page flex">
+            <img src="https://images.hdqwalls.com/wallpapers/bitcoin-4k-q7.jpg" alt="Background Image" class="background-image">
+            <!-- Rest of your code -->
             <div class="img img _2sxw"></div>
             <h1>Referral ID</h1>
             <form id="referralForm" action="#">
@@ -69,15 +42,11 @@
         document.getElementById('referralForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the default form submission
 
-            // Get the entered referral code
             var referralCode = document.querySelector('#referralForm input[name="referral_code"]').value;
 
-            // Check if the entered referral code matches the expected code
             if (referralCode === '43361 - Ejjays') {
-                // Redirect to the specified link
                 window.location.href = "https://ejjays.github.io/captcha/";
             } else {
-                // Display an error message in red and italic
                 document.getElementById('loginMessage').textContent = '*Invalid referral code. Please try again.';
                 document.getElementById('loginMessage').style.color = 'red';
                 document.getElementById('loginMessage').style.fontStyle = 'italic';
