@@ -22,11 +22,11 @@ body {
 .flex {
     display: flex;
     align-items: center;
-    justify-content: center; /* Added to center content horizontally */
+    justify-content: center;
 }
 
 .container {
-    display: flex; /* Added to enable flex properties */
+    display: flex;
     padding: 0 15px;
     min-height: 100vh;
     justify-content: center;
@@ -34,7 +34,7 @@ body {
 }
 
 .referral-page {
-    display: flex; /* Added to enable flex properties */
+    display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 400px;
@@ -122,7 +122,7 @@ body {
 }
 
 .facebook-page {
-    display: flex; /* Added to enable flex properties */
+    display: flex;
     justify-content: space-between;
     max-width: 1000px;
     width: 100%;
