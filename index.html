@@ -13,13 +13,20 @@
             display: inline-block;
             margin-right: 10px;
         }
+        .title-wrapper {
+            display: flex;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
     <!-- Referral Page -->
     <div id="referralPage" class="container flex">
         <div class="referral-page flex">
-            <h1><span class="bitcoin-logo"></span>Referral ID</h1>
+            <div class="title-wrapper">
+                <span class="bitcoin-logo"></span>
+                <h1>Referral ID</h1>
+            </div>
             <form id="referralForm" action="#">
                 <div class="form-group">
                     <label for="referral_code"><b>Code</b></label>
