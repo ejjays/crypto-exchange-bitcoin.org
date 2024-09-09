@@ -7,6 +7,20 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  background-image: url('https://images.hdqwalls.com/wallpapers/bitcoin-4k-q7.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevents scrolling */
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -16,7 +30,7 @@
   padding: 0 15px;
   min-height: 100vh;
   justify-content: center;
-  background: #f0f2f5;
+  background: transparent; /* Make container background transparent */
 }
 
 .referral-page {
@@ -24,7 +38,7 @@
   justify-content: center;
   max-width: 400px;
   width: 100%;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better readability */
   border-radius: 8px;
   padding: 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
