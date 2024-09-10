@@ -1,129 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-body {
-    background: url('https://images.hdqwalls.com/wallpapers/bitcoin-4k-q7.jpg') center/cover no-repeat;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 .flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .container {
-    display: flex;
-    padding: 0 15px;
-    min-height: 100vh;
-    justify-content: center;
-    background: transparent;
+  padding: 0 15px;
+  min-height: 100vh;
+  justify-content: center;
+  background: transparent; /* Make container background transparent */
 }
 
 .referral-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 400px;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 8px;
-    padding: 50px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
-                0 8px 16px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better readability */
+  border-radius: 8px;
+  padding: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .referral-page h1 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
 
 .form-group label {
-    font-size: 1rem;
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .form-group label input[type="checkbox"] {
-    margin-right: 10px;
-    transform: scale(0.8);
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
+  margin-right: 10px;
+  transform: scale(0.8); /* Reduce the size of the checkbox */
+  width: 16px;
+  height: 16px;
+  vertical-align: middle; /* Align the checkbox vertically */
 }
 
 .form-group input {
-    height: 55px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-    padding: 0 14px;
+  height: 55px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 0 14px;
 }
 
 .form-group input:focus {
-    outline: none;
-    border-color: #1877f2;
+  outline: none;
+  border-color: #1877f2;
 }
 
 .form-group button {
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background: #088F8F;
-    padding: 10px 0;
-    border-radius: 6px;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: 0.2s ease;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #097969;
+  padding: 10px 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.2s ease;
 }
 
 .form-group button:hover {
-    background: #0d65d9;
+  background: #5F9EA0;
 }
 
 .form-group .cancelbtn {
-    background-color: #f44336;
-    padding: 10px 0;
-    font-size: 1rem;
+  background-color: #5F9EA0;
+  padding: 10px 0;
+  font-size: 1rem;
 }
 
 .form-group .cancelbtn:hover {
-    background-color: #d32f2f;
+  background-color: #5F9EA0;
 }
 
 .form-group .psw {
-    color: #1877f2;
-    font-size: 0.875rem;
+  color: #1877f2;
+  font-size: 0.875rem;
 }
 
 .form-group .psw:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .facebook-page {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1000px;
-    width: 100%;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
 }
