@@ -16,7 +16,7 @@
   padding: 0 15px;
   min-height: 100vh;
   justify-content: center;
-  background: transparent; /* Make container background transparent */
+  background: transparent;
 }
 
 .referral-page {
@@ -24,7 +24,7 @@
   justify-content: center;
   max-width: 400px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better readability */
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   padding: 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
@@ -47,14 +47,15 @@
   margin-bottom: 5px;
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 .form-group label input[type="checkbox"] {
   margin-right: 10px;
-  transform: scale(0.8); /* Reduce the size of the checkbox */
+  transform: scale(0.8);
   width: 16px;
   height: 16px;
-  vertical-align: middle; /* Align the checkbox vertically */
+  vertical-align: middle;
 }
 
 .form-group input {
@@ -74,7 +75,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  background: #097969;
+  background: #1877f2; /* Change the background color to Facebook's blue */
   padding: 10px 0;
   border-radius: 6px;
   color: #fff;
@@ -84,7 +85,7 @@
 }
 
 .form-group button:hover {
-  background: #5F9EA0;
+  background: #0069c0; /* Slightly darker blue on hover */
 }
 
 .form-group .cancelbtn {
